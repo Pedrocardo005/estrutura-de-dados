@@ -1,14 +1,14 @@
 class Stack:
     
     def __init__(self):
-        self.items = [None]
+        self.__items = [None]
         self.top = 0
 
     def push(self, elemento):
-        if len(self.items) >= self.top:
-            items2 = [None] * len(self.items)
-            self.items += items2
+        if len(self.__items) >= self.top:
+            items2 = [None] * len(self.__items)
+            self.__items += items2
         
-        self.items[self.top] = elemento
+        self.__items[self.top] = elemento
 
         self.top += 1
