@@ -18,3 +18,6 @@ class Stack:
         del self.__items[self.__top - 1]
         self.__top -= 1
         return elemento
+    
+    def peek(self):
+        return self.__items[self.__top - 1]
