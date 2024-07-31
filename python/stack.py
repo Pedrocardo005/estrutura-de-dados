@@ -21,3 +21,6 @@ class Stack:
     
     def peek(self):
         return self.__items[self.__top - 1]
+    
+    def isempty(self):
+        return self.__top == 0
