@@ -14,6 +14,10 @@ class Stack:
         self.__top += 1
 
     def pop(self):
+
+        if self.isempty():
+            return
+
         elemento = self.__items[self.__top - 1]
         del self.__items[self.__top - 1]
         self.__top -= 1
