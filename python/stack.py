@@ -28,3 +28,6 @@ class Stack:
     
     def isempty(self):
         return self.__top == 0
+    
+    def clear(self):
+        self.__items = []
