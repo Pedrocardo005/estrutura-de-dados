@@ -34,3 +34,15 @@ class Stack:
 
     def size(self):
         return self.__top
+    
+    def __str__(self) -> str:
+        if self.__items[0] == None:
+            return None
+        lista = '{}'.format(self.__items[0])
+
+        for n in range(1, len(self.__items)):
+            if self.__items[n] == None:
+                break
+            lista += ', {}'.format(self.__items[n])
+
+        return lista
