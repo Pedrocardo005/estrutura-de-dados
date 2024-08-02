@@ -31,3 +31,6 @@ class Stack:
     
     def clear(self):
         self.__items = []
+
+    def size(self):
+        return self.__top
